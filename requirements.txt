@@ -1,0 +1,30 @@
+# === Document Loaders ===
+pymupdf>=1.24.0          # PDF extraction (fitz)
+pdfplumber>=0.11.0       # PDF com tabelas
+python-docx>=1.1.0       # DOCX
+openpyxl>=3.1.0          # Excel .xlsx
+pandas>=2.2.0            # DataFrames
+pyarrow>=17.0.0          # Parquet
+
+# === Chunking & Text Processing ===
+langchain-text-splitters>=0.2.0
+tiktoken>=0.7.0          # Tokenizer p/ contagem precisa
+
+# === Embeddings ===
+google-genai>=1.0.0      # Google Gemini embeddings (padrão)
+openai>=1.40.0           # OpenAI embeddings (alternativa)
+# voyageai>=0.3.0        # Descomente se usar Voyage
+# sentence-transformers>=3.0.0  # Descomente se usar local
+
+# === Database ===
+psycopg[binary]>=3.2.0   # PostgreSQL driver
+pgvector>=0.3.0          # pgvector Python
+
+# === Utilities ===
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+uuid7>=0.1.0             # UUIDs ordenáveis por tempo
+
+# === Opcional: Azure ===
+# azure-storage-blob>=12.0.0
+# azure-servicebus>=7.0.0
