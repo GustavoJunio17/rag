@@ -1,3 +1,8 @@
+# === Web API ===
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
 # === Document Loaders ===
 pymupdf>=1.24.0          # PDF extraction (fitz)
 pdfplumber>=0.11.0       # PDF com tabelas
@@ -10,21 +15,18 @@ pyarrow>=17.0.0          # Parquet
 langchain-text-splitters>=0.2.0
 tiktoken>=0.7.0          # Tokenizer p/ contagem precisa
 
-# === Embeddings ===
-google-genai>=1.0.0      # Google Gemini embeddings (padrão)
-openai>=1.40.0           # OpenAI embeddings (alternativa)
-# voyageai>=0.3.0        # Descomente se usar Voyage
-# sentence-transformers>=3.0.0  # Descomente se usar local
+# === Agent & LLM ===
+langgraph>=0.2.0         # Orquestração do agente
+langchain-core>=0.3.0    # Base para tools e messages
+google-genai>=1.0.0      # Google Gemini (padrão)
+openai>=1.40.0           # OpenAI (alternativa)
 
-# === Database ===
+# === Database & Storage ===
 psycopg[binary]>=3.2.0   # PostgreSQL driver
 pgvector>=0.3.0          # pgvector Python
+duckdb>=1.1.0            # SQL em Parquet
 
 # === Utilities ===
 python-dotenv>=1.0.0
 tqdm>=4.66.0
 uuid7>=0.1.0             # UUIDs ordenáveis por tempo
-
-# === Opcional: Azure ===
-# azure-storage-blob>=12.0.0
-# azure-servicebus>=7.0.0

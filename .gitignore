@@ -1,1 +1,43 @@
+# Project Specific
+mnt/
+storage/
 DRE 2025 Senior.PDF
+
+# Python Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Static Analysis
+.mypy_cache/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
